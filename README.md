@@ -19,6 +19,11 @@ or create project dir from webpack layout
 git clone git@github.com:webster6667/webpack-layout.git youre-project-name
 ```
 
+after clone start install dependencies
+```
+npm i
+```
+
 ### Include
 
 * JS
