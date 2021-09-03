@@ -7,7 +7,19 @@
 > Start bundler layout, with react
 
 
-###Include
+### Install
+
+clone files to empty project dir
+```
+git clone git@github.com:webster6667/webpack-layout.git .
+```
+
+or create project dir from webpack layout
+```
+git clone git@github.com:webster6667/webpack-layout.git youre-project-name
+```
+
+### Include
 
 * JS
   * ES6
