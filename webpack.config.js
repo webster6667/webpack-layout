@@ -6,8 +6,10 @@ const path = require('path'),
 		getResolveExtensions,
 		getStyleRules,
 		getScriptRules,
-		getFileRules
+		getFileRules,
+		getAliasFromFile
 	  } = require('webpack-config-create-utils')()
+
 
 
 const {
@@ -18,6 +20,7 @@ const {
 		optimizationSettingsByMode
 	} = getBuildMode(),
     extensions = getResolveExtensions(),
+    alias = getAliasFromFile(__dirname),
     defaultPlugins = getDefaultPlugins({isProd}),
     fileRules = getFileRules(),
 
@@ -41,11 +44,7 @@ module.exports = {
 	},
 	resolve: {
 		extensions,
-		alias: {
-			'@src': getFileRelativeConfigFile('src'),
-			'@common-img': getFileRelativeConfigFile('src/common/img'),
-			'@common-style': getFileRelativeConfigFile('src/common/style'),
-		}
+		alias
 	},
 	optimization: optimizationSettingsByMode,
 	devServer: {
