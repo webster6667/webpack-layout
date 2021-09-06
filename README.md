@@ -18,6 +18,7 @@ sudo rm -R .git
 or create project dir from webpack layout
 ```
 git clone git@github.com:webster6667/webpack-layout.git youre-project-name
+cd youre-project-name
 sudo rm -R .git
 ```
 
